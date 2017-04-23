@@ -8,7 +8,7 @@
 
 namespace AppBundle\Controller;
 
-use AppBundle\StudentRepository;
+use AppBundle\Entity\StudentRepository;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;

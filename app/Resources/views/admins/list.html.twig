@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block pageTitle %}List of admins{% endblock %}
+
+{% block body %}
+
+    <ul>
+        {% for admin in admins %}
+            <li>
+                id = {{ admin.id }}
+                <br>
+                name = {{ admin.name }}
+            </li>
+        {% endfor %}
+    </ul>
+
+    {{ dump() }}
+
+{% endblock %}

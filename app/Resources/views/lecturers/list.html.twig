@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block pageTitle %}List of lecturers{% endblock %}
+
+{% block body %}
+
+    <ul>
+        {% for lecturer in lecturers %}
+            <li>
+                id = {{ lecturer.id }}
+                <br>
+                name = {{ lecturer.name }}
+            </li>
+        {% endfor %}
+    </ul>
+
+    {{ dump() }}
+
+{% endblock %}
